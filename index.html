@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel MacArthur – Mortgage Consultant</title>
+
+  <link href="./src/css/main.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link href='src/style.css' rel='stylesheet'>
+
+</head>
+
+<!-- Loading Screen-->
+<div id="loading-section" class="fixed inset-0 flex flex-col justify-center items-center bg-white text-white z-50">
+  <div class="loader">
+    <section class="dots-container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </section>
+  </div>
+</div>
+
+<body class=''>
+
+
+  <!-- component -->
+  <header data-aos="fade-down" data-aos-duration="2000">
+    <nav x-data="{ open: false }" class="flex h-auto text-slate-900 w-auto bg-white rounded-lg justify-between
+      md:h-16">
+      <div class="flex w-full justify-between ">
+        <div :class="open ? 'hidden':'flex'" class="flex px-6 w-1/2 items-center font-semibold
+          md:w-1/5 md:px-1 md:flex md:items-center md:justify-center"
+          x-transition:enter="transition ease-out duration-300">
+          <a href="">Samuel MacArthur</a>
+        </div>
+
+        <div x-show="open" x-transition:enter="transition ease-in-out duration-300" class="flex flex-col w-full h-auto
+          md:hidden">
+          <div class="flex flex-col py-9 items-center justify-center gap-2">
+            <a href="">Home</a>
+            <a href="">Contact</a>
+            <a href="">What to Expect</a>
+            <a href="">Programs</a>
+            <a href="">About Me</a>
+            <a href="">Reviews</a>
+            <a href="">Apply now</a>
+          </div>
+        </div>
+        <div class="hidden w-3/5 items-center justify-evenly font-semibold
+          md:flex">
+          <a href="">Home</a>
+          <a href="">Contact</a>
+          <a href="">What to Expect</a>
+          <a href="">Programs</a>
+          <a href="">About Me</a>
+          <a href="">Reviews</a>
+          <a href="">Apply now</a>
+        </div>
+
+        <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
+                          md:hidden
+                        " @click="open = !open">
+          <span class="sr-only">Open main menu</span>
+          <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+            <span aria-hidden="true"
+              class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+              :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+            <span aria-hidden="true"
+              class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
+              :class="{'opacity-0': open } "></span>
+            <span aria-hidden="true"
+              class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+              :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+          </div>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="mx-auto max-w-7xl -mt-5 lg:-mt-9 px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32"
+    data-aos="fade-up" data-aos-duration="2000">
+    <img class="mx-auto max-w-2xl sm:mt-6 rounded-full border-4 border-[#005581]" src="src/img/samuel-macarthur.webp"
+      alt="" srcset="">
+
+    <p class="mx-auto mt-5 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">First Class Mortgage – Our
+      Expertise Your Piece of Mind
+    </p>
+
+    <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      <span class="inline-block">Making
+        <span class="relative whitespace-nowrap text-[#005581]">
+          <span class="relative">Mortgages</span></span>
+      </span>
+      <span class="inline-block">Simple</span>
+    </h1>
+
+    <p class="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">
+      <span class="inline-block">Buying a home is the biggest purchase of someone’s life. From application to closing
+        I’ll be with you for any questions, concerns and support needed.</span>
+      <span class="inline-block">sam@firstclasscorp.com – (507) 476-0121</span>
+    </p>
+
+
+
+  </section>
+
+
+
+  <section class="mx-auto mt-9 max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16" data-aos="fade-up"
+    data-aos-duration="2000">
+    <div class="mx-auto max-w-lg text-center">
+      <h2 class="text-3xl font-bold sm:text-4xl text-slate-900">Step by Step</h2>
+
+      <p class="mt-4 text-slate-700">
+        As a mortgage consultant, I am committed to helping you navigate the complex world of mortgages with ease and
+        confidence. I understand that buying a home is one of the most significant financial decisions you’ll ever make.
+        Whether you’re a first-time homebuyer or looking to refinance your current mortgage, I am here to guide you
+        every step of the way.
+      </p>
+
+      <p class="mt-4 text-slate-700">
+        I firmly believe that personalized service is the key to a successful mortgage experience. When you work with
+        me, you can expect individual attention and a tailored approach to suit your unique needs and financial goals. I
+        am dedicated to finding the best mortgage solutions that align perfectly with your circumstances, ensuring you
+        secure the best possible rates and terms.
+      </p>
+
+      <div class="flex inline-block justify-center mt-4">
+        <button class="inline-flex bg-[#005581] p-3 m-2 text-white rounded-md justify-center hover:bg-[#0C80A1] duration-300 ease-in-out hover:scale-110">Apply now</button>
+        <button class="inline-flex bg-[#005581] p-3 m-2 text-white rounded-md justify-center hover:bg-[#0C80A1] duration-300 ease-in-out hover:scale-110">Contact Me</button>
+      </div>
+
+
+    </div>
+
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+  <script>
+    $(window).on("load", function () {
+      $("#loading-section").fadeOut(100);
+    });
+
+    AOS.init();
+  </script>
+
+
+  <script defer type="text/javascript" src="src/main.js"></script>
+</body>
+
+</html>
