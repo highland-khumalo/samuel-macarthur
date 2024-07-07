@@ -42,7 +42,7 @@
 
   <!-- component -->
   <header data-aos="fade-down" data-aos-duration="2000">
-    <nav x-data="{ open: false }" class="flex h-auto text-slate-900 w-auto bg-white rounded-lg justify-between
+    <nav x-data="{ open: false }" class="flex h-auto text-slate-900 w-auto bg-white rounded-lg scale-[90%] justify-between
       md:h-16">
       <div class="flex w-full justify-between ">
         <div :class="open ? 'hidden':'flex'" class="flex px-6 w-1/2 items-center font-semibold
@@ -64,14 +64,13 @@
           </div>
         </div>
         <div class="hidden w-3/5 items-center justify-evenly font-semibold
-          md:flex">
+          md:flex gap-1 ">
           <a href="" class="hover:text-[#005581]">Home</a>
           <a href="" class="hover:text-[#005581]">Contact</a>
           <a href="" class="hover:text-[#005581]">What to Expect</a>
           <a href="" class="hover:text-[#005581]">Programs</a>
           <a href="" class="hover:text-[#005581]">About Me</a>
           <a href="" class="hover:text-[#005581]">Reviews</a>
-          <a href="" class="hover:text-[#005581]">Apply now</a>
         </div>
 
         <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
@@ -389,6 +388,7 @@
   </section>
 
 
+
   <script>
     document.addEventListener("alpine:init", () => {
       Alpine.data("imageSlider", () => ({
@@ -441,7 +441,7 @@
           spacing: 16,
         },
         breakpoints: {
-          '(min-width: 1024px)': {
+          '(min-width: 904px)': {
             slides: {
               origin: 'auto',
               perView: 2.5,
