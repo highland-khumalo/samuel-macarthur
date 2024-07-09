@@ -37,25 +37,27 @@
     </div>
 </div>
 
-<body>
+<body class=''>
+
+
     <!-- Navbar -->
     <header data-aos="fade-down" data-aos-duration="2000">
         <nav x-data="{ open: false }" class="flex text-slate-500 h-auto w-auto bg-white rounded-lg scale-[90%] justify-between
-      md:h-16">
+    md:h-16">
             <div class="flex w-full justify-between ">
                 <div :class="open ? 'hidden':'flex'" class="flex px-6 w-1/2 items-center font-semibold
-          md:w-1/5 md:px-1 md:flex md:items-center md:justify-center"
-                    x-transition:enter="transition ease-out duration-300">
+        md:w-1/5 md:px-1 md:flex md:items-center md:justify-center"
+                    x-transition:enter="transition ease-out duration-300 text-slate-500">
                     <a href="">Samuel MacArthur</a>
                 </div>
 
                 <div x-show="open" x-transition:enter="transition ease-in-out duration-300" class="flex flex-col w-full h-auto
-          md:hidden">
+        md:hidden">
                     <div class="flex flex-col py-9 items-center justify-center gap-2">
                         <a href="./index.html" class="hover:text-[#005581]">Home</a>
                         <a href="/contact.html" class="hover:text-[#005581]">Contact</a>
                         <a href="/what-to-expect.html" class="hover:text-[#005581]">What to Expect</a>
-                        <a href="/programs.html" class="hover:text-[#005581]">Programs</a>
+                        <a href="/programs" class="hover:text-[#005581]">Programs</a>
                         <a href="/about-me.html" class="hover:text-[#005581]">About Me</a>
                         <a href="/reviews.html" class="hover:text-[#005581]">Reviews</a>
                         <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur"
@@ -63,18 +65,18 @@
                     </div>
                 </div>
                 <div class="hidden w-3/5 items-center justify-evenly font-semibold
-          md:flex gap-1 ">
+        md:flex gap-1 text-slate-500 ">
                     <a href="./index.html" class="hover:text-[#005581]">Home</a>
                     <a href="/contact.html" class="hover:text-[#005581]">Contact</a>
                     <a href="/what-to-expect.html" class="hover:text-[#005581]">What to Expect</a>
-                    <a href="/programs.html" class="hover:text-[#005581]">Programs</a>
+                    <a href="/programs" class="hover:text-[#005581]">Programs</a>
                     <a href="/about-me.html" class="hover:text-[#005581]">About Me</a>
                     <a href="/reviews.html" class="hover:text-[#005581]">Reviews</a>
                 </div>
 
-                <button class="text-slate-500 w-10 h-10 relative focus:outline-none bg-white
-                          md:hidden
-                        " @click="open = !open">
+                <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
+                        md:hidden
+                      " @click="open = !open">
                     <span class="sr-only">Open main menu</span>
                     <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
                         <span aria-hidden="true"
@@ -92,107 +94,142 @@
         </nav>
     </header>
 
-    <section class="" id="contact" data-aos="fade-up" data-aos-duration="2000">
-        <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-            <div class="mb-4">
-                <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
-                    <p class="text-base font-semibold uppercase tracking-wide text-[#005581]">
-                        Contact
-                    </p>
-                    <h2 class="font-heading mb-4 font-bold tracking-tight text-slate-900  text-3xl sm:text-5xl">
-                        Let's Talk
-                    </h2>
-                    <p class="mx-auto mt-4 max-w-3xl text-xl text-slate-600">Don’t hesitate to reach out with the
-                        contact information below, or send a message using the form.
-                    </p>
-                </div>
-            </div>
-            <div class="flex items-stretch justify-center">
-                <div class="grid md:grid-cols-2">
-                    <div class="h-full pr-6">
+    <section>
+        <h2 class="text-3xl my-4 text-center font-bold sm:text-4xl text-slate-900">Programs</h2>
 
-                        <ul class="mb-6 md:mb-0">
-                            <li class="flex">
-                                <div
-                                    class="flex h-10 w-10 items-center justify-center rounded bg-[#005581] text-slate-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="h-6 w-6">
-                                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                                        <path
-                                            d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="ml-4 mb-4">
-                                    <h3 class="mb-2 text-lg font-medium leading-6 text-slate-900">
-                                        Address
-                                    </h3>
-                                    <p class="text-slate-600">2300 13th Ave South</p>
-                                    <p class="text-slate-600">Fargo, ND 58103</p>
-                                    <p class="text-slate-600">USA</p>
-                                </div>
-                            </li>
-                            <li class="flex">
-                                <div
-                                    class="flex h-10 w-10 items-center justify-center rounded bg-[#005581] text-slate-50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="h-6 w-6">
-                                        <path
-                                            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
-                                        </path>
-                                        <path d="M15 7a2 2 0 0 1 2 2"></path>
-                                        <path d="M15 3a6 6 0 0 1 6 6"></path>
-                                    </svg>
-                                </div>
-                                <div class="ml-4 mb-4">
-                                    <h3 class="mb-2 text-lg font-medium leading-6 text-slate-900">
-                                        Contact
-                                    </h3>
-                                    <p class="text-slate-600">Mobile: 507-476-0121</p>
-                                    <p class="text-slate-600">Mail: Sam@firstclasscorp.com</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                        <form id="contactForm">
-                            <div class="mb-6 lg:-mt-10">
-                                <div class="mx-0 mb-1 sm:mb-4">
-                                    <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input
-                                            type="text" id="name" autocomplete="given-name" placeholder="Your name"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-slate-300 sm:mb-0"
-                                            name="name">
-                                    </div>
-                                    <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input
-                                            type="email" id="email" autocomplete="email"
-                                            placeholder="Your email address"
-                                            class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-slate-300 sm:mb-0"
-                                            name="email">
-                                    </div>
-                                </div>
-                                <div class="mx-0 mb-1 sm:mb-4">
-                                    <label for="textarea"
-                                        class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea"
-                                        name="textarea" cols="30" rows="5" placeholder="Write your message..."
-                                        class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-slate-300 sm:mb-0"></textarea>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit"
-                                    class="w-full bg-[#005581] hover:bg-[#0C80A1] duration-300 ease-in-out hover:scale-110 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send
-                                    Message</button>
-                            </div>
-                        </form>
-                    </div>
+        <div class="flex justify-center mx-[10%] sm:mx-[50%] md:mx-[50%] lg:mx-[7%]">
+            <div class="flex flex-wrap gap-4 mt-10">
+                <div class="flex-none w-[350px]">
+                    <article class="rounded-lg shadow transition hover:shadow-lg">
+                        <img alt=""
+                            src="src/img/image-12.png"
+                            class="h-56 w-full object-cover" />
+
+                        <div class="bg-white p-4 sm:p-6">
+
+                            <a href="#">
+                                <h3 class="mt-0.5 text-lg text-gray-900">First Time Homebuyer Loan</h3>
+                            </a>
+
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                Having lower interest rates, and up to 0% down payment options. First Time Homebuyer
+                                Loans
+                                are available for those who have not owned in the last 3 years and make homebuying very
+                                affordable.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="flex-none w-[350px]">
+                    <article class="rounded-lg shadow transition hover:shadow-lg">
+                        <img alt=""
+                            src="src/img/image-8.webp"
+                            class="h-56 w-full object-cover" />
+
+                        <div class="bg-white p-4 sm:p-6">
+
+                            <a href="#">
+                                <h3 class="mt-0.5 text-lg text-gray-900">FHA Mortgage
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                Designed to help lower income Americans with lower credit get into homes. FHA allows
+                                people who couldn’t normally qualify get into homes.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="flex-none w-[350px]">
+                    <article class="rounded-lg shadow transition hover:shadow-lg">
+                        <img alt=""
+                            src="src/img/image-5.webp"
+                            class="h-56 w-full object-cover" />
+
+                        <div class="bg-white p-4 sm:p-6">
+
+                            <a href="#">
+                                <h3 class="mt-0.5 text-lg text-gray-900">VA Mortgage
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                Guaranteed by the department of Veteran Affairs. Qualified individuals have no Mortgage
+                                Insurance and up to 0% down payment.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="flex-none w-[350px]">
+                    <article class="rounded-lg shadow transition hover:shadow-lg">
+                        <img alt=""
+                            src="src/img/image-13.png"
+                            class="h-56 w-full object-cover" />
+
+                        <div class="bg-white p-4 sm:p-6">
+
+                            <a href="#">
+                                <h3 class="mt-0.5 text-lg text-gray-900">Conventional Mortgage
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                Being the most common mortgage. Conventional loans can have variable or fixed interest
+                                rates but cover a wide variety of options. Including being able to fund second homes,
+                                and investment homes.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="flex-none w-[350px]">
+                    <article class="rounded-lg shadow transition hover:shadow-lg">
+                        <img alt=""
+                            src="src/img/image-14.webp"
+                            class="h-56 w-full object-cover" />
+
+                        <div class="bg-white p-4 sm:p-6">
+
+                            <a href="#">
+                                <h3 class="mt-0.5 text-lg text-gray-900">USDA
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                Mortgages with up to 0% down payment required. USDA was created to promote buying of
+                                homes in rural areas.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="flex-none w-[350px]">
+                    <article class="rounded-lg shadow transition hover:shadow-lg">
+                        <img alt=""
+                            src="src/img/image-15.webp"
+                            class="h-56 w-full object-cover" />
+
+                        <div class="bg-white p-4 sm:p-6">
+
+                            <a href="#">
+                                <h3 class="mt-0.5 text-lg text-gray-900">Jumbo Loans
+                                </h3>
+                            </a>
+
+                            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                                Mortgages that are above the conforming loan limit of $726,200 are qualified as Jumbo
+                                loans. It is very similar to a conventional loan just bigger loan amounts.
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <!-- Foooter -->
@@ -240,7 +277,7 @@
     <!-- Social Buttons -->
     <section>
         <div class="social-buttons">
-            <a href="#" class="social-button text-[#005581] hover:text-white github">
+            <a href="sam@firstclasscorp.com" class="social-button text-[#005581] hover:text-white github">
                 <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon">
                     <path stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="currentColor"
                         d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
@@ -249,7 +286,8 @@
                     </path>
                 </svg>
             </a>
-            <a href="#" class="social-button text-[#005581] hover:text-white linkedin">
+            <a href="https://www.linkedin.com/in/samuel-macarthur-7126b7108/"
+                class="social-button text-[#005581] hover:text-white linkedin">
                 <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
                     <g id="Icons" stroke="none" stroke-width="1">
@@ -262,7 +300,8 @@
                     </g>
                 </svg>
             </a>
-            <a href="#" class="social-button text-[#005581] hover:text-white facebook">
+            <a href="https://www.facebook.com/profile.php?id=100088670637199"
+                class="social-button text-[#005581] hover:text-white facebook">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 310 310" xml:space="preserve"
                     fill="currentColor">
@@ -275,7 +314,8 @@
                     </g>
                 </svg>
             </a>
-            <a href="#" class="social-button text-[#005581] hover:text-white instagram">
+            <a href="https://www.instagram.com/samdoesmortgages/"
+                class="social-button text-[#005581] hover:text-white instagram">
                 <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
                     <g id="Page-1" stroke="none" stroke-width="1">
@@ -293,7 +333,6 @@
             </a>
         </div>
     </section>
-
 
     <script>
         $(window).on("load", function () {
