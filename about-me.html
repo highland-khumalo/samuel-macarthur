@@ -40,74 +40,75 @@
 <body class=''>
 
 
-  <!-- Navbar -->
-  <header data-aos="fade-down" data-aos-duration="2000">
-    <nav x-data="{ open: false }" class="flex text-slate-500 h-auto w-auto bg-white rounded-lg scale-[90%] justify-between
+    <!-- Navbar -->
+    <header data-aos="fade-down" data-aos-duration="2000">
+        <nav x-data="{ open: false }" class="flex text-slate-500 h-auto w-auto bg-white rounded-lg scale-[90%] justify-between
     md:h-16">
-      <div class="flex w-full justify-between ">
-        <div :class="open ? 'hidden':'flex'" class="flex px-6 w-1/2 items-center font-semibold
+            <div class="flex w-full justify-between ">
+                <div :class="open ? 'hidden':'flex'" class="flex px-6 w-1/2 items-center font-semibold
         md:w-1/5 md:px-1 md:flex md:items-center md:justify-center"
-          x-transition:enter="transition ease-out duration-300 text-slate-500">
-          <a href="">Samuel MacArthur</a>
-        </div>
+                    x-transition:enter="transition ease-out duration-300 text-slate-500">
+                    <a href="">Samuel MacArthur</a>
+                </div>
 
-        <div x-show="open" x-transition:enter="transition ease-in-out duration-300" class="flex flex-col w-full h-auto
+                <div x-show="open" x-transition:enter="transition ease-in-out duration-300" class="flex flex-col w-full h-auto
         md:hidden">
-          <div class="flex flex-col py-9 items-center justify-center gap-2">
-            <a href="./index.html" class=" hover:text-[#005581]">Home</a>
-            <a href="./contact.html" class=" hover:text-[#005581]">Contact</a>
-            <a href="./what-to-expect.html" class=" hover:text-[#005581]">What to Expect</a>
-            <a href="./programs.html" class=" hover:text-[#005581]">Programs</a>
-            <a href="./about-me.html" class=" hover:text-[#005581]">About Me</a>
-            <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur"
-              class=" hover:text-[#005581]">Apply now</a>
-          </div>
-        </div>
-        <div class="hidden w-3/5 items-center justify-evenly font-semibold
+                    <div class="flex flex-col py-9 items-center justify-center gap-2">
+                        <a href="./index.html" class=" hover:text-[#005581]">Home</a>
+                        <a href="./contact.html" class=" hover:text-[#005581]">Contact</a>
+                        <a href="./what-to-expect.html" class=" hover:text-[#005581]">What to Expect</a>
+                        <a href="./programs.html" class=" hover:text-[#005581]">Programs</a>
+                        <a href="./about-me.html" class=" hover:text-[#005581]">About Me</a>
+                        <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur"
+                            class=" hover:text-[#005581]">Apply now</a>
+                    </div>
+                </div>
+                <div class="hidden w-3/5 items-center justify-evenly font-semibold
         md:flex gap-1 text-slate-500 ">
-          <a href="./index.html" class=" hover:text-[#005581]">
-            <button class="h-5 -mt-8 py-3 block">Home</button>
-          </a>
-          <a href="./contact.html" class=" hover:text-[#005581]">
-            <button class="h-5 -mt-8 py-3 block">Contact</button>
-          </a>
-          <a href="./what-to-expect.html" class=" hover:text-[#005581]">
-            <button class="h-5 -mt-8 py-3 block">What to Expect</button>
-          </a>
-          <a href="./programs.html" class=" hover:text-[#005581]">
-            <button class="h-5 -mt-8 py-3 block">Programs</button>
-          </a>
-          <a href="./about-me.html" class=" hover:text-[#005581]">
-            <button class="h-5 -mt-8 py-3 block">About Me</button>
-          </a>
-          <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur"
-            class=" hover:text-[#005581]">
-            <button class="h-5 -mt-8 py-3 block">Apply now</button>
-          </a>
-        </div>
+                    <a href="./index.html" class=" hover:text-[#005581]">
+                        <button class="h-5 -mt-8 py-3 block">Home</button>
+                    </a>
+                    <a href="./contact.html" class=" hover:text-[#005581]">
+                        <button class="h-5 -mt-8 py-3 block">Contact</button>
+                    </a>
+                    <a href="./what-to-expect.html" class=" hover:text-[#005581]">
+                        <button class="h-5 -mt-8 py-3 block">What to Expect</button>
+                    </a>
+                    <a href="./programs.html" class=" hover:text-[#005581]">
+                        <button class="h-5 -mt-8 py-3 block">Programs</button>
+                    </a>
+                    <a href="./about-me.html" class=" hover:text-[#005581]">
+                        <button class="h-5 -mt-8 py-3 block">About Me</button>
+                    </a>
+                    <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur"
+                        class=" hover:text-[#005581]">
+                        <button class="h-5 -mt-8 py-3 block">Apply now</button>
+                    </a>
+                </div>
 
-        <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
+                <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white
                         md:hidden
                       " @click="open = !open">
-          <span class="sr-only">Open main menu</span>
-          <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-            <span aria-hidden="true"
-              class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
-              :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-            <span aria-hidden="true"
-              class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
-              :class="{'opacity-0': open } "></span>
-            <span aria-hidden="true"
-              class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
-              :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
-          </div>
-        </button>
-      </div>
-    </nav>
-  </header>
+                    <span class="sr-only">Open main menu</span>
+                    <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                        <span aria-hidden="true"
+                            class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                            :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                        <span aria-hidden="true"
+                            class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
+                            :class="{'opacity-0': open } "></span>
+                        <span aria-hidden="true"
+                            class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                            :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </header>
 
 
-    <section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16 m-3 mt-9" data-aos="fade-up" data-aos-duration="2000">
+    <section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16 m-3 mt-9" data-aos="fade-up"
+        data-aos-duration="2000">
         <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div class="grid items-center grid-cols-1 md:grid-cols-2">
 
@@ -174,7 +175,8 @@
                     </a>
                 </div>
                 <div class="px-5 py-2">
-                    <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur" class="text-base leading-6 text-slate-500 hover:text-[#005581]">
+                    <a href="https://www.blink.mortgage/app/signup/p/firstclassmortgages/samuelmacarthur?campaign=SamMacArthur"
+                        class="text-base leading-6 text-slate-500 hover:text-[#005581]">
                         Apply now
                     </a>
                 </div>
@@ -226,7 +228,7 @@
                     </g>
                 </svg>
             </a>
-            <a href="https://www.instagram.com/samdoesmortgages/"
+            <a href="https://www.instagram.com/samuel.macarthur/"
                 class="social-button text-[#005581] hover:text-white instagram">
                 <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor">
